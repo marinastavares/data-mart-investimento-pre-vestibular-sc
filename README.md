@@ -16,7 +16,7 @@ E por fim, o assets encontram-se arquivos utilizados para a base de dados refere
 
 ### Execução do ETL
 
-Para o processo de ETL, é necessário a instalação do software Pentaho Data Integration, sendo a versão 9.1 utilizada para a criação dos arquivos deste repositório. Além disso, para ser possível a conexão com o servidor MySQL é necessária a inclusão do driver para o MySQL na pasta lib do Pentaho, e o arquivo dump deve ser rodado para geração das tabelas no MySQL. Após o setup necessário do ambiente, os seguintes passos podem ser seguidos para a execução do processo de ETL:
+Para o processo de ETL, é necessário a instalação do software Pentaho Data Integration, sendo a versão 9.1 utilizada para a criação dos arquivos deste repositório. Para ser possível a conexão com o servidor MySQL é necessária a inclusão do driver para o MySQL na pasta lib do Pentaho, a versão utilizada neste trabalho foi a 5.1.49. Além disso, o arquivo [dump](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/blob/main/back-end/dump-vestibular.sql) deve ser rodado para geração das tabelas do transacional no MySQL. Após o setup necessário do ambiente, os seguintes passos podem ser seguidos para a execução do processo de ETL:
 
 1 - Criar uma conexão `transacional` conectando à base de dados `vestibular` que foi gerada através do arquivo dump no MySQL;
 
