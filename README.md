@@ -26,5 +26,5 @@ Para o processo de ETL, é necessário a instalação do software Pentaho Data I
 
 4 - Conferir se as saídas dos arquivos `.ktr` estão conectados de forma correta à conexão `multidimensional`;
 
-5 - Rodar o job [JOB](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/blob/main/back-end/job.kjb) para executar as transformações e carregar os dados para o Data Mart.
+5 - Rodar o [JOB](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/blob/main/back-end/job.kjb) para executar as transformações e carregar os dados para o Data Mart.
 
