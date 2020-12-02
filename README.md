@@ -6,15 +6,13 @@ O trabalho feito para a realização de um Data Mart que tem como o objetivo enc
 
 Esse repositório é dividido em três arquivos, sendo eles referentes ao [back-end](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/tree/main/back-end), [front-end](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/tree/main/front-end) e os [assets](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/tree/main/assets).
 
-No arquivo de back-end se encontram os arquivos relacionados ao desenvolvimento do processo de ETL, contendo também arquivos json da base de dados multidimensional criada através deste processo no MySQL, a qual segue o esquema estrela proposto pelo grupo.
+Na paste de back-end se encontram os arquivos relacionados ao desenvolvimento do processo de ETL, contendo também arquivos json da base de dados multidimensional criada através deste processo no MySQL, a qual segue o esquema estrela proposto pelo grupo.
 
-No arquivo front-end encontra-se as imagens geradas no Software Power PI.
+No arquivo front-end encontra-se as imagens geradas no Software Power PI e o relatório gerado no formato [`.pbix`](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/blob/main/front-end/Front_End_dw.pbix), o qual pode ser carregado neste mesmo Software para verificar as análises feitas a partir da modelagem dimensional.
 
 E por fim, o assets encontram-se arquivos utilizados para a base de dados referentes as regiões brasileiras, como também o arquivo com o documento final do projeto.
 
 ## Rodando o projeto
-
-### Execução do ETL
 
 Para o processo de ETL, é necessário a instalação do software Pentaho Data Integration, sendo a versão 9.1 utilizada para a criação dos arquivos deste repositório. Para ser possível a conexão com o servidor MySQL é necessária a inclusão do driver para o MySQL na pasta lib do Pentaho, a versão utilizada neste trabalho foi a 5.1.49. Além disso, o arquivo [dump](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/blob/main/back-end/dump-vestibular.sql) deve ser rodado para geração das tabelas do transacional no MySQL. Após o setup necessário do ambiente, os seguintes passos podem ser seguidos para a execução do processo de ETL:
 
@@ -27,4 +25,3 @@ Para o processo de ETL, é necessário a instalação do software Pentaho Data I
 4 - Conferir se as saídas dos arquivos `.ktr` estão conectados de forma correta à conexão `multidimensional`;
 
 5 - Rodar o [JOB](https://github.com/marinastavares/data-mart-investimento-pre-vestibular-sc/blob/main/back-end/job.kjb) para executar as transformações e carregar os dados para o Data Mart.
-
